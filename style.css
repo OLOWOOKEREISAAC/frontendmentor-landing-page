@@ -33,7 +33,7 @@
 
 }
 .section1 button{
-    background-color:rgb(71, 71, 243);
+    background-color:hsl(224, 93%, 58%);
     color: white;
     padding: 10px 50px;
     border: none;
@@ -93,7 +93,7 @@
 }
 
 .section2 a{
-    color: rgb(2, 145, 90);
+    color: hsl(170, 45%, 43%);
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@
     align-items: center;
     margin-bottom: 15px;
     gap: 10px;
-    border-bottom: 1px solid rgb(2, 145, 90);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
     max-width: 170px;
 }
 .arrow{
@@ -154,7 +154,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 300px;
-    background-color: rgba(1, 1, 63, 0.699);
+    background-color: hsl(238, 22%, 44%);
     padding: 20px 80px;
     color: white;
     align-items: center;
@@ -196,7 +196,7 @@
 
 .footer2{
     height: 350px;
-    background-color: rgb(1, 1, 63);
+    background-color: hsl(243, 87%, 12%);
     display: grid;
     grid-template-columns:repeat(4,1fr);
     color: white;
@@ -226,21 +226,45 @@
     height: 20px;
     margin: 10px 0px;
 }
+.icons{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+   
+}
 
+.icons > i {
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
 @media screen and (max-width:768px){
     .section1, .section2, .footer1, .footer2{
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-        
+        width: 100%;
     }
-
+    .section1{
+        margin: 0 auto;
+    }
+    .section2{
+        padding:10%;
+    }
     .section1 img, .section2 img{
         grid-row-start: 1;
         /* padding: 80px 0 40px; */
     }
     .section1 img{
         margin: 40px 0 ;
+        height: 250px;
+    }
+    .section1 h1{
+        font-size: 30px;
+    }
+    .section1 p{
+        font-size: 20px;
     }
     .section1 button{
         width: 80%;
@@ -258,6 +282,7 @@
         font-size: x-large;
         margin: 0px auto;
         width: 80%;
+        padding: 9px 15px 9px 15px;
         
         /* margin-right: 10px; */
         border: 1px solid rgba(0, 0, 0, 0.274);  
@@ -277,4 +302,40 @@
         margin: 0 auto;
         margin-bottom: 80px;
     }
+    .card{
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .card p{
+        font-size: smaller;
+        margin: 15px 0;
+    }
+    .footer1{
+        padding: 5px;
+    }
+
+    .footer1 input{
+        width: fit-content;
+    }
+    .footer2 > svg {
+        grid-column: 1 / 2;}
+
+    .footer2{
+        height: fit-content;
+        text-align: left;
+    }
+    .navBar {
+        margin: 50px 20px;
+        max-height: 45px;
+    }
+    .navBar div {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px
+    }
+    .navBar img{
+        width: 100px;
+    }
+
 }
